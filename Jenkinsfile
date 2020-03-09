@@ -35,7 +35,6 @@ node{
           sh "ssh  ubuntu@172.31.44.206 ${dockerRun}"
        }
        
-    }
-     
-     
-}
+     }
+   }   
+ }
