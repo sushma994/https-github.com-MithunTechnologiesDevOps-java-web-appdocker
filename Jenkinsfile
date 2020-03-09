@@ -29,10 +29,10 @@ node{
          
          sshagent(['DOCKER_SERVER']) {
               sshagent(['dockerdevserver']) {
-          sh 'ssh -o StrictHostKeyChecking=no ubuntu@3.19.232.166 docker stop java-web-app || true'
-          sh 'ssh  ubuntu@3.19.232.166 docker rm java-web-app1 || true'
-          sh 'ssh  ubuntu@3.19.232.166 docker rmi -f  $(docker images -q) || true'
-          sh "ssh  ubuntu@3.19.232.166 ${dockerRun}"
+          sh 'ssh -o StrictHostKeyChecking=no ubuntu@172.31.44.206 docker stop java-web-app || true'
+          sh 'ssh  ubuntu@172.31.44.206 docker rm java-web-app1 || true'
+          sh 'ssh  ubuntu@172.31.44.206 docker rmi -f  $(docker images -q) || true'
+          sh "ssh  ubuntu@172.31.44.206 ${dockerRun}"
        }
        
     }
